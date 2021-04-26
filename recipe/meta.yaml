@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/aws/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://github.com/cleverhans-lab/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: b3fb659ccead20a966f52690d72d1ce1dbd115f4d23dd11175e563c37a4bdeee
 
 build:
