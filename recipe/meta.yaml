@@ -1,5 +1,5 @@
 {% set name = "cleverhans" %}
-{% set version = "3.1.0" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/cleverhans-lab/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: b3fb659ccead20a966f52690d72d1ce1dbd115f4d23dd11175e563c37a4bdeee
+  sha256: f30449a2012a3e35470db053c2c30e99d6feb5785d001a42d50509ac1a831f87
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
